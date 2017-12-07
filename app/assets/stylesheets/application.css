@@ -13,7 +13,7 @@
  */
 
 @import "global/css/bootstrap.min";
-@import "global/css/bootstrap-extended.min";
+@import "global/css/bootstrap-extend.min";
 @import "site.min";
 
 @import "global/vendor/animsition/animsition";
@@ -25,3 +25,7 @@
 @import "global/vendor/chartist/chartist";
 @import "global/vendor/jvectormap/jquery-jvectormap";
 @import "global/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip";
+
+@import "fonts/weather-icons/weather-icons.css";
+@import "fonts/web-icons/web-icons.min.css";
+@import "fonts/brand-icons/brand-icons.min.css";
