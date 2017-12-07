@@ -12,6 +12,16 @@
  *
  */
 
-@import "lobal/css/bootstrap.min";
-@import "lobal/css/bootstrap-extended.min";
+@import "global/css/bootstrap.min";
+@import "global/css/bootstrap-extended.min";
 @import "site.min";
+
+@import "global/vendor/animsition/animsition";
+@import "global/vendor/asscrollable/asScrollable";
+@import "global/vendor/switchery/switchery";
+@import "global/vendor/intro-js/introjs";
+@import "global/vendor/slidepanel/slidePanel";
+@import "global/vendor/flag-icon-css/flag-icon";
+@import "global/vendor/chartist/chartist";
+@import "global/vendor/jvectormap/jquery-jvectormap";
+@import "global/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip";
