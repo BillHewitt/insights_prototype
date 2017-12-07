@@ -59,3 +59,4 @@
 //= require global/Plugin/jvectormap
 
 //= require base/assets/examples/js/dashboard/v1
+//= require breakpoints/breakpoints
