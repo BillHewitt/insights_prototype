@@ -1,0 +1,203 @@
+<div class="page">
+  <div class="page-header">
+    <h1 class="page-title">TaskBoard</h1>
+  </div>
+  <div class="page-content">
+    <ul class="taskboard-stages ui-sortable" id="taskboardStages">
+      <li class="taskboard-stage">
+        <header class="taskboard-stage-header ui-sortable-handle">
+          <div class="taskboard-stage-actions float-right">
+            <div class="dropdown">
+              <a data-toggle="dropdown" href="#" aria-expanded="false"><i class="icon wb-chevron-down" aria-hidden="true"></i></a>
+              <div class="dropdown-menu bullet" role="menu">
+                <a class="taskboard-stage-rename dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-pencil" aria-hidden="true"></i>Rename</a>
+                <a class="taskboard-stage-delete dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Delete</a>
+                <div class="taskboard-stage-rename-wrap">
+                  <div class="form-group">
+                    <input class="form-control taskboard-stage-rename-input" type="text" value="TO DO" name="name">
+                  </div>
+                  <button class="btn btn-primary btn-block taskboard-stage-rename-save" type="button">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h5 class="taskboard-stage-title">TO DO</h5>
+        </header>
+        <div class="taskboard-stage-content">
+          <ul class="list-group taskboard-list ui-sortable">
+            <li class="list-group-item priority-urgent" data-taskboard="slidePanel" data-url="panel.tpl">
+              <div class="checkbox-custom checkbox-primary">
+                <input type="checkbox" name="checkbox">
+                <label class="task-title">Perspecta historiae studiis</label>
+              </div>
+              <div class="w-full">
+                <div class="task-badges"><span class="task-badge task-badge-subtask icon wb-list-bulleted">1/2</span><span class="task-badge task-badge-attachments icon wb-paperclip">2</span><span class="task-badge task-badge-comments icon wb-chat">2</span></div>
+                <ul class="task-members">
+                  <li><img class="avatar avatar-sm" src="/assets/portraits/5.jpg"></li>
+                </ul>
+              </div>
+            </li>
+            <li class="list-group-item priority-high" data-taskboard="slidePanel" data-url="panel.tpl">
+              <div class="checkbox-custom checkbox-primary">
+                <input type="checkbox" name="checkbox">
+                <label class="task-title">neque profecta fictae</label>
+              </div>
+              <div class="w-full">
+                <div class="task-badges"><span class="task-badge task-badge-subtask icon wb-list-bulleted">0/2</span><span class="task-badge task-badge-comments icon wb-chat">1</span></div>
+                <ul class="task-members">
+                  <li><img class="avatar avatar-sm" src="/assets/portraits/5.jpg"></li>
+                  <li><img class="avatar avatar-sm" src="/assets/portraits/3.jpg"></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="action-wrap">
+            <a class="add-item-toggle" href="#"><i class="icon wb-plus" aria-hidden="true"></i>Add Task</a>
+            <div class="add-item-wrap">
+              <form class="add-item" role="form" method="post" action="#">
+                <div class="form-group">
+                  <label class="form-control-label mb-15" for="name">Task name:</label>
+                  <input class="form-control" type="text" placeholder="Task name" name="name">
+                </div>
+                <div class="form-group text-right">
+                  <a class="btn btn-sm btn-white add-item-cancel">Cancel</a>
+                  <button type="button" class="btn btn-primary add-item-add">Add</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="taskboard-stage">
+        <header class="taskboard-stage-header ui-sortable-handle">
+          <div class="taskboard-stage-actions float-right">
+            <div class="dropdown">
+              <a data-toggle="dropdown" href="#" aria-expanded="false"><i class="icon wb-chevron-down" aria-hidden="true"></i></a>
+              <div class="dropdown-menu bullet" role="menu">
+                <a class="taskboard-stage-rename dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-pencil" aria-hidden="true"></i>Rename</a>
+                <a class="taskboard-stage-delete dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Delete</a>
+                <div class="taskboard-stage-rename-wrap">
+                  <div class="form-group">
+                    <input class="form-control taskboard-stage-rename-input" type="text" value="DOING" name="name">
+                  </div>
+                  <button class="btn btn-primary btn-block taskboard-stage-rename-save" type="button">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h5 class="taskboard-stage-title">DOING</h5>
+        </header>
+        <div class="taskboard-stage-content">
+          <ul class="list-group taskboard-list ui-sortable">
+            <li class="list-group-item priority-normal" data-taskboard="slidePanel" data-url="panel.tpl">
+              <div class="checkbox-custom checkbox-primary">
+                <input type="checkbox" name="checkbox">
+                <label class="task-title">Explicatis sic</label>
+              </div>
+              <div class="w-full">
+                <div class="task-badges"><span class="task-badge task-badge-subtask icon wb-calendar">10/29</span><span class="task-badge task-badge-comments icon wb-chat">1</span></div>
+                <ul class="task-members">
+                  <li><img class="avatar avatar-sm" src="/assets/portraits/5.jpg"></li>
+                  <li><img class="avatar avatar-sm" src="/assets/portraits/4.jpg"></li>
+                </ul>
+              </div>
+            </li>
+            <li class="list-group-item priority-high" data-taskboard="slidePanel" data-url="panel.tpl">
+              <div class="checkbox-custom checkbox-primary">
+                <input type="checkbox" name="checkbox">
+                <label class="task-title">Suas habent abducat</label>
+              </div>
+              <div class="w-full">
+                <div class="task-badges"><span class="task-badge task-badge-attachments icon wb-paperclip">3</span></div>
+                <ul class="task-members">
+                  <li><img class="avatar avatar-sm" src="/assets/portraits/5.jpg"></li>
+                  <li><img class="avatar avatar-sm" src="/assets/portraits/1.jpg"></li>
+                  <li><img class="avatar avatar-sm" src="/assets/portraits/2.jpg"></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="action-wrap">
+            <a class="add-item-toggle" href="#"><i class="icon wb-plus" aria-hidden="true"></i>Add Task</a>
+            <div class="add-item-wrap">
+              <form class="add-item" role="form" method="post" action="#">
+                <div class="form-group">
+                  <label class="form-control-label mb-15" for="name">Task name:</label>
+                  <input class="form-control" type="text" placeholder="Task name" name="name">
+                </div>
+                <div class="form-group text-right">
+                  <a class="btn btn-sm btn-white add-item-cancel">Cancel</a>
+                  <button type="button" class="btn btn-primary add-item-add">Add</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="taskboard-stage">
+        <header class="taskboard-stage-header ui-sortable-handle">
+          <div class="taskboard-stage-actions float-right">
+            <div class="dropdown">
+              <a data-toggle="dropdown" href="#" aria-expanded="false"><i class="icon wb-chevron-down" aria-hidden="true"></i></a>
+              <div class="dropdown-menu bullet" role="menu">
+                <a class="taskboard-stage-rename dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-pencil" aria-hidden="true"></i>Rename</a>
+                <a class="taskboard-stage-delete dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Delete</a>
+                <div class="taskboard-stage-rename-wrap">
+                  <div class="form-group">
+                    <input class="form-control taskboard-stage-rename-input" type="text" value="DONE" name="name">
+                  </div>
+                  <button class="btn btn-primary btn-block taskboard-stage-rename-save" type="button">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h5 class="taskboard-stage-title">DONE</h5>
+        </header>
+        <div class="taskboard-stage-content">
+          <ul class="list-group taskboard-list ui-sortable">
+            <li class="list-group-item priority-normal" data-taskboard="slidePanel" data-url="panel.tpl">
+              <div class="checkbox-custom checkbox-primary">
+                <input type="checkbox" checked="checked" name="checkbox">
+                <label class="task-title">Numquid molestum deditum</label>
+              </div>
+              <div class="w-full">
+                <div class="task-badges"></div>
+                <ul class="task-members">
+                  <li><img class="avatar avatar-sm" src="/assets/portraits/6.jpg"></li>
+                </ul>
+              </div>
+            </li>
+            <li class="list-group-item priority-normal" data-taskboard="slidePanel" data-url="panel.tpl">
+              <div class="checkbox-custom checkbox-primary">
+                <input type="checkbox" checked="checked" name="checkbox">
+                <label class="task-title">Vix doceat una</label>
+              </div>
+              <div class="w-full">
+                <div class="task-badges"><span class="task-badge task-badge-subtask icon wb-list-bulleted">2/2</span><span class="task-badge task-badge-comments icon wb-chat">1</span></div>
+                <ul class="task-members">
+                  <li><img class="avatar avatar-sm" src="/assets/portraits/5.jpg"></li>
+                  <li><img class="avatar avatar-sm" src="/assets/portraits/4.jpg"></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="action-wrap">
+            <a class="add-item-toggle" href="#"><i class="icon wb-plus" aria-hidden="true"></i>Add Task</a>
+            <div class="add-item-wrap">
+              <form class="add-item" role="form" method="post" action="#">
+                <div class="form-group">
+                  <label class="form-control-label mb-15" for="name">Task name:</label>
+                  <input class="form-control" type="text" placeholder="Task name" name="name">
+                </div>
+                <div class="form-group text-right">
+                  <a class="btn btn-sm btn-white add-item-cancel">Cancel</a>
+                  <button type="button" class="btn btn-primary add-item-add">Add</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

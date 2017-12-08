@@ -10,22 +10,5 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require_self
  */
-
-@import "global/css/bootstrap.min";
-@import "global/css/bootstrap-extend.min";
-@import "site.min";
-
-@import "global/vendor/animsition/animsition";
-@import "global/vendor/asscrollable/asScrollable";
-@import "global/vendor/switchery/switchery";
-@import "global/vendor/intro-js/introjs";
-@import "global/vendor/slidepanel/slidePanel";
-@import "global/vendor/flag-icon-css/flag-icon";
-@import "global/vendor/chartist/chartist";
-@import "global/vendor/jvectormap/jquery-jvectormap";
-@import "global/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip";
-
-@import "fonts/weather-icons/weather-icons.css";
-@import "fonts/web-icons/web-icons.min.css";
-@import "fonts/brand-icons/brand-icons.min.css";
