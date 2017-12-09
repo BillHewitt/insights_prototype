@@ -90,7 +90,7 @@
     <script src="/assets/jquery.matchHeight-min.js"></script>
 
     <!-- Plugins for this page -->
-    <%= yield :page_scripts %>
+    <%= yield :plugins %>
     
     <!-- Scripts -->
     <script src="/assets/Component.js"></script>
@@ -108,14 +108,7 @@
     <script src="/assets/config/tour.js"></script>
     <script>Config.set('assets', '/assets');</script>
     
-    <!-- Page -->
-    <script src="/assets/Site.js"></script>
-    <script src="/assets/Plugin/asscrollable.js"></script>
-    <script src="/assets/Plugin/slidepanel.js"></script>
-    <script src="/assets/Plugin/switchery.js"></script>
-    <script src="/assets/Plugin/matchheight.js"></script>
-    <script src="/assets/Plugin/jvectormap.js"></script>
-
-    <script src="/assets/v1.js"></script>
+    <!-- Page Scripts -->
+    <%= yield :page_scripts %>
   </body>
 </html>
