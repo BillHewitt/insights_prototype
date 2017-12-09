@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
   root 'home#index'
-  get 'home/index'
-  get 'home/taskboard'
-  get 'home/contacts'
-  get 'home/gauges'
-  get 'home/chartjs'
-  get 'home/general'
-  get 'home/team'
-  get 'home/data'
+  get "index", to: "home#index", as: :index
+  get 'taskboard', to: 'home#taskboard', as: :taskboard
+  get 'contacts', to: 'home#contacts', as: :contacts
+  get 'gauges', to: 'home#gauges', as: :gauges
+  get 'chartjs', to: 'home#chartjs', as: :chartjs
+  get 'general', to: 'home#general', as: :general
+  get 'team', to: 'home#team', as: :team
+  get 'data', to: 'home#data', as: :data
   get 'pages/chartjs'
   get 'pages/contacts'
   get 'pages/data'
