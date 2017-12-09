@@ -2,13 +2,37 @@
   <!-- Page -->
   <link rel="stylesheet" href="/assets/contacts.min.css?v4.0.2">
 <% end %>
-<% content_for :plugins do %>
+<% content_for :scripts do %>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/af2821b0/cloudflare-static/email-decode.min.js"></script>
+  <!-- Plugins -->
+  <script src="/assets/switchery.js"></script>
+  <script src="/assets/intro.js"></script>
+  <script src="/assets/screenfull.js"></script>
   <script src="/assets/slidepanel/jquery-slidePanel.min.js?v4.0.2"></script>
+
+  <!-- Plugins For This Page -->
   <script src="/assets/aspaginator/jquery-asPaginator.min.js?v4.0.2"></script>
   <script src="/assets/jquery-placeholder/jquery.placeholder.js?v4.0.2"></script>
   <script src="/assets/bootbox/bootbox.min.js?v4.0.2"></script>
-<% end %>
-<% content_for :page_scripts do %>
+
+  <!-- Scripts -->
+  <script src="/assets/Component.js"></script>
+  <script src="/assets/Plugin.js"></script>
+  <script src="/assets/Base.js"></script>
+  <script src="/assets/Config.js"></script>
+
+  <script src="/assets/Section/Menubar.js"></script>
+  <script src="/assets/Section/GridMenu.js"></script>
+  <script src="/assets/Section/Sidebar.js"></script>
+  <script src="/assets/Section/PageAside.js"></script>
+  <script src="/assets/Plugin/menu.js"></script>
+
+  <!-- Config -->
+  <script src="/assets/config/colors.js"></script>
+  <script src="/assets/config/tour.js"></script>
+  <script>Config.set('assets', '/assets');</script>
+
+  <!-- Page -->
   <script src="/assets/Site.min.js?v4.0.2"></script>
   <script src="/assets/Plugin/asscrollable.min.js?v4.0.2"></script>
   <script src="/assets/Plugin/slidepanel.min.js?v4.0.2"></script>
