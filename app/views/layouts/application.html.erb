@@ -7,7 +7,7 @@
     <meta name="description" content="bootstrap admin template">
     <meta name="author" content="">
     <title>Insightsprototype</title>
-     <%= csrf_meta_tags %>
+    <%= csrf_meta_tags %>
     <%#= stylesheet_link_tag    'application' %>
     <%#= javascript_include_tag 'application' %>
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/assets/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/bootstrap-extend.min.css">
     <link rel="stylesheet" href="/assets/site.min.css">
-    
+
     <!-- Plugins -->
     <link rel="stylesheet" href="/assets/plugins/animsition.css">
     <link rel="stylesheet" href="/assets/plugins/asScrollable.css">
@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="/assets/plugins/chartist.css">
     <link rel="stylesheet" href="/assets/plugins/jquery-jvectormap.css">
     <link rel="stylesheet" href="/assets/plugins/chartist-plugin-tooltip.css">
-    <link rel="stylesheet" href="/assets/v1.css">
+    <%= yield :head %>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="/assets/weather-icons/weather-icons.css">
@@ -88,6 +88,9 @@
     <script src="/assets/jquery-jvectormap.min.js"></script>
     <script src="/assets/jquery-jvectormap-au-mill-en.js"></script>
     <script src="/assets/jquery.matchHeight-min.js"></script>
+
+    <!-- Plugins for this page -->
+    <%= yield :page_scripts %>
     
     <!-- Scripts -->
     <script src="/assets/Component.js"></script>
